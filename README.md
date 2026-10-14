@@ -14,6 +14,14 @@ A simple task management app built with the **ABAP RESTful Application Programmi
 
 ---
 
+## Project Overview – ADT (Eclipse)
+
+> The full object tree of the ZTASK_TRACKER package in SAP ADT (Eclipse), showing all objects: Business Services, CDS Views, BDEFs, Dictionary Tables, and Classes.
+
+![ADT Project Overview](docs/screenshots/overview.png)
+
+---
+
 ## Repository Structure
 
 ```
@@ -45,7 +53,8 @@ task-tracker-rap/
 │   └── service-definitions/                         # Service / Binding
 │       └── zui_task2.srvd.srvdsrv                   # OData V4 service definition
 ├── docs/
-│   └── screenshots/                                 # App screenshots
+│   └── screenshots/
+│       ├── overview.png
 │       ├── main_home.png
 │       ├── create.png
 │       ├── added_task.png
