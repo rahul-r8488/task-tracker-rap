@@ -1,0 +1,5 @@
+@EndUserText.label: 'Task Tracker Service'
+define service ZUI_TASK2 {
+  expose ZC_TASK        as Task;
+  expose ZI_PRIORITY_VH as Priority;
+}

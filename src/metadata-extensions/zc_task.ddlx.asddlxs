@@ -1,0 +1,35 @@
+@Metadata.layer: #CORE
+@UI.headerInfo: { typeName: 'Task', typeNamePlural: 'Tasks',
+                  title: { type: #STANDARD, value: 'Title' } }
+annotate view ZC_TASK with
+{
+  @UI.facet: [ { id: 'Details', purpose: #STANDARD, type: #IDENTIFICATION_REFERENCE,
+                 label: 'Task Details', position: 10 } ]
+
+  @UI.hidden: true
+  TaskId;
+
+  @UI: { lineItem: [ { position: 10, importance: #HIGH },
+                     { type: #FOR_ACTION, dataAction: 'markComplete', label: 'Mark Complete' } ],
+         identification: [ { position: 10 },
+                           { type: #FOR_ACTION, dataAction: 'markComplete', label: 'Mark Complete' } ],
+         selectionField: [ { position: 10 } ] }
+  Title;
+
+  @UI: { identification: [ { position: 20 } ] }
+  Description;
+
+  @UI: { lineItem: [ { position: 20, importance: #HIGH } ],
+         identification: [ { position: 30 } ],
+         selectionField: [ { position: 20 } ] }
+  Priority;
+
+  @UI: { lineItem: [ { position: 30, importance: #HIGH } ],
+         identification: [ { position: 40 } ] }
+  DueDate;
+
+  @UI: { lineItem: [ { position: 40, importance: #HIGH } ],
+         identification: [ { position: 50 } ],
+         selectionField: [ { position: 30 } ] }
+  Status;
+}
